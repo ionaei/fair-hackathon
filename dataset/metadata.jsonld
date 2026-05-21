@@ -40,11 +40,31 @@
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "distribution": [
-    {
-      "@type": "DataDownload",
-      "encodingFormat": "text/csv",
-      "contentUrl": "http://host.docker.internal:8000/data/"
-    }
+  {
+    "@type": "DataDownload",
+    "encodingFormat": "text/csv",
+    "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Activity.csv"
+  },
+  {
+    "@type": "DataDownload",
+    "encodingFormat": "text/csv",
+    "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Demographics.csv"
+  },
+  {
+    "@type": "DataDownload",
+    "encodingFormat": "text/csv",
+    "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Labels.csv"
+  },
+  {
+    "@type": "DataDownload",
+    "encodingFormat": "text/csv",
+    "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Physiology.csv"
+  },
+  {
+    "@type": "DataDownload",
+    "encodingFormat": "text/csv",
+    "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Sleep.csv"
+  }
   ],
   "variableMeasured": [
     { "@type": "PropertyValue", "name": "activity", "description": "In-home movement and activity time-series" },
