@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://w3id.org/fair-hackathon/tihm/v1",
+  "identifier": "https://w3id.org/fair-hackathon/tihm/v1",
+
+  "name": "TIHM: An open dataset for remote healthcare monitoring in dementia",
+
+  "description": "TIHM is an open in-home remote-monitoring dataset for People Living with Dementia (PLWD), comprising per-patient time-series of activity, sleep, physiology, demographics and clinical labels collected between 2019-04-01 and 2019-06-30 by the UK DRI Care Research & Technology Centre.",
+
+  "creator": [
+    { "@type": "Person", "name": "Olga Balazikova" },
+    { "@type": "Person", "name": "Ramin Nilforooshan" },
+    { "@type": "Person", "name": "Yu Chen" },
+    { "@type": "Person", "name": "Samaneh Kouchaki" },
+    { "@type": "Person", "name": "Nan Fletcher-Loyd" },
+    { "@type": "Person", "name": "Chloe Walsh" },
+    { "@type": "Person", "name": "Eyal Soreq" },
+    { "@type": "Person", "name": "Gregory Scott" },
+    { "@type": "Person", "name": "Payam Barnaghi" },
+    { "@type": "Person", "name": "Helen Rostill" },
+    { "@type": "Person", "name": "Alexander Capstick" },
+    { "@type": "Person", "name": "Francesca Palermo" },
+    { "@type": "Person", "name": "Jessica True" }
+  ],
+
+  "publisher": {
+    "@type": "Organization",
+    "name": "UK DRI Care Research & Technology Centre, Imperial College London"
+  },
+
+  "datePublished": "2023-02-10",
+
+  "keywords": [
+    "Remote Healthcare",
+    "Machine Learning",
+    "Time-Series",
+    "Monitoring",
+    "Dementia"
+  ]
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "http://host.docker.internal:8000/data/"
+    }
+  ],
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "activity", "description": "In-home movement and activity time-series" },
+    { "@type": "PropertyValue", "name": "sleep", "description": "Sleep monitoring time-series" },
+    { "@type": "PropertyValue", "name": "physiology", "description": "Physiological measurements" },
+    { "@type": "PropertyValue", "name": "demographics", "description": "Participant demographic information" },
+    { "@type": "PropertyValue", "name": "clinical labels", "description": "Clinically annotated event labels" }
+  ],
+"temporalCoverage": "2019-04-01/2019-06-30",
+  "conformsTo": {
+    "@type": "CreativeWork",
+    "url": "https://www.w3.org/TR/vocab-dcat-2/"
+  }
+}
