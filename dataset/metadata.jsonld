@@ -39,6 +39,7 @@
     "Dementia"
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
+  "conditionsOfAccess": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/LICENSE",
   "distribution": [
   {
     "@type": "DataDownload",
