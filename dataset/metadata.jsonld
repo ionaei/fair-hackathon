@@ -38,4 +38,24 @@
     "Monitoring",
     "Dementia"
   ]
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "http://host.docker.internal:8000/data/"
+    }
+  ],
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "activity", "description": "In-home movement and activity time-series" },
+    { "@type": "PropertyValue", "name": "sleep", "description": "Sleep monitoring time-series" },
+    { "@type": "PropertyValue", "name": "physiology", "description": "Physiological measurements" },
+    { "@type": "PropertyValue", "name": "demographics", "description": "Participant demographic information" },
+    { "@type": "PropertyValue", "name": "clinical labels", "description": "Clinically annotated event labels" }
+  ],
+"temporalCoverage": "2019-04-01/2019-06-30",
+  "conformsTo": {
+    "@type": "CreativeWork",
+    "url": "https://www.w3.org/TR/vocab-dcat-2/"
+  }
 }
