@@ -1,25 +1,174 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>TIHM</title>
-</head>
-   <title>TIHM: An open dataset for remote healthcare monitoring in dementia</title>
+  <meta charset="utf-8">
+  <title>TIHM: An open dataset for remote healthcare monitoring in dementia</title>
 
-   <meta name="DC.title" content="TIHM: An open dataset for remote healthcare monitoring in dementia">
-   <meta name="DC.creator" content="Palermo, Francesca">
-   <meta name="DC.description" content="The TIHM dataset comprises remote in-home monitoring data collected from people living with dementia, including environmental and physiological sensor observations supporting research into remote healthcare monitoring.">
-   <meta name="DC.publisher" content="Zenodo">
-   <meta name="DC.date" content="2023-02-09">
-   <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.7622128">
-   <meta name="DC.rights" content="https://creativecommons.org/licenses/by/4.0/">
-   <meta name="DC.rights" content="https://creativecommons.org/licenses/by/4.0/">
-   <meta name="dcterms.license" content="https://creativecommons.org/licenses/by/4.0/">
-   <meta name="dcterms.rights" content="https://raw.githubusercontent.com/ionaei/fair-hackathon/main/LICENSE">
-   <meta name="DC.language" content="en">
-   <meta name="DC.subject" content="dementia">
-   <meta name="DC.subject" content="remote monitoring">
-   <meta name="DC.type" content="Dataset">
+  <!-- Dublin Core -->
+  <meta name="DC.title"       content="TIHM: An open dataset for remote healthcare monitoring in dementia">
+  <meta name="DC.creator"     content="Palermo, Francesca">
+  <meta name="DC.description" content="The TIHM dataset comprises remote in-home monitoring data collected from people living with dementia, including environmental and physiological sensor observations supporting research into remote healthcare monitoring.">
+  <meta name="DC.publisher"   content="UK DRI Care Research & Technology Centre, Imperial College London">
+  <meta name="DC.date"        content="2023-02-10">
+  <meta name="DC.identifier"  content="https://w3id.org/fair-hackathon/tihm/v1">
+  <meta name="DC.identifier"  content="https://doi.org/10.5281/zenodo.7622128">
+  <meta name="DC.rights"      content="https://creativecommons.org/licenses/by/4.0/">
+  <meta name="DC.language"    content="en">
+  <meta name="DC.subject"     content="dementia">
+  <meta name="DC.subject"     content="remote monitoring">
+  <meta name="DC.type"        content="Dataset">
+
+  <!-- DCterms -->
+  <meta name="dcterms.license" content="https://creativecommons.org/licenses/by/4.0/">
+  <meta name="dcterms.rights"  content="https://raw.githubusercontent.com/ionaei/fair-hackathon/main/LICENSE">
+
+  <!-- Signposting -->
+  <link rel="cite-as"     href="https://w3id.org/fair-hackathon/tihm/v1">
+  <link rel="describedby" href="metadata.jsonld" type="application/ld+json">
+  <link rel="license"     href="https://creativecommons.org/licenses/by/4.0/">
+  <link rel="item" href="https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Activity.csv"     type="text/csv">
+  <link rel="item" href="https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Demographics.csv" type="text/csv">
+  <link rel="item" href="https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Labels.csv"       type="text/csv">
+  <link rel="item" href="https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Physiology.csv"   type="text/csv">
+  <link rel="item" href="https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Sleep.csv"        type="text/csv">
+
+  <!-- Inline JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": [
+      "https://schema.org/",
+      { "prov": "http://www.w3.org/ns/prov#" }
+    ],
+    "@type": "Dataset",
+    "@id": "https://w3id.org/fair-hackathon/tihm/v1",
+    "identifier": [
+      "https://w3id.org/fair-hackathon/tihm/v1",
+      "https://doi.org/10.5281/zenodo.7622128"
+    ],
+    "url": "https://w3id.org/fair-hackathon/tihm/v1",
+    "name": "TIHM: An open dataset for remote healthcare monitoring in dementia",
+    "description": "TIHM is an open in-home remote-monitoring dataset for People Living with Dementia (PLWD), comprising per-patient time-series of activity, sleep, physiology, demographics and clinical labels collected between 2019-04-01 and 2019-06-30 by the UK DRI Care Research & Technology Centre at Imperial College London.",
+    "creator": [
+      { "@type": "Person", "name": "Olga Balazikova" },
+      { "@type": "Person", "name": "Ramin Nilforooshan" },
+      { "@type": "Person", "name": "Yu Chen" },
+      { "@type": "Person", "name": "Samaneh Kouchaki" },
+      { "@type": "Person", "name": "Nan Fletcher-Loyd" },
+      { "@type": "Person", "name": "Chloe Walsh" },
+      { "@type": "Person", "name": "Eyal Soreq" },
+      { "@type": "Person", "name": "Gregory Scott" },
+      { "@type": "Person", "name": "Payam Barnaghi" },
+      { "@type": "Person", "name": "Helen Rostill" },
+      { "@type": "Person", "name": "Alexander Capstick" },
+      { "@type": "Person", "name": "Francesca Palermo" },
+      { "@type": "Person", "name": "Jessica True" }
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "UK DRI Care Research & Technology Centre, Imperial College London",
+      "url": "https://ukdri.ac.uk/centres/imperial"
+    },
+    "datePublished": "2023-02-10",
+    "dateModified": "2023-02-10",
+    "version": "1.0",
+    "inLanguage": "en",
+    "keywords": [
+      "Remote Healthcare",
+      "Machine Learning",
+      "Time-Series",
+      "Monitoring",
+      "Dementia",
+      "Alzheimer",
+      "IoT",
+      "Wearables",
+      "Sleep",
+      "Physiology"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "conditionsOfAccess": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/LICENSE",
+    "isAccessibleForFree": true,
+    "sameAs": "https://doi.org/10.5281/zenodo.7622128",
+    "citation": {
+      "@type": "CreativeWork",
+      "identifier": "https://doi.org/10.5281/zenodo.7622128",
+      "name": "TIHM: An open dataset for remote healthcare monitoring in dementia",
+      "url": "https://doi.org/10.5281/zenodo.7622128"
+    },
+    "isBasedOn": {
+      "@type": "Dataset",
+      "name": "TIHM: An open dataset for remote healthcare monitoring in dementia",
+      "identifier": "https://doi.org/10.5281/zenodo.7622128",
+      "url": "https://doi.org/10.5281/zenodo.7622128",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zenodo"
+      }
+    },
+    "prov:wasDerivedFrom": {
+      "@id": "https://doi.org/10.5281/zenodo.7622128"
+    },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "name": "Activity.csv",
+        "description": "Room-level activity per patient",
+        "encodingFormat": "text/csv",
+        "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Activity.csv"
+      },
+      {
+        "@type": "DataDownload",
+        "name": "Demographics.csv",
+        "description": "Sex and age band per patient",
+        "encodingFormat": "text/csv",
+        "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Demographics.csv"
+      },
+      {
+        "@type": "DataDownload",
+        "name": "Labels.csv",
+        "description": "Clinical labels including agitation and weight",
+        "encodingFormat": "text/csv",
+        "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Labels.csv"
+      },
+      {
+        "@type": "DataDownload",
+        "name": "Physiology.csv",
+        "description": "Heart rate, blood pressure, temperature and other physiological measurements",
+        "encodingFormat": "text/csv",
+        "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Physiology.csv"
+      },
+      {
+        "@type": "DataDownload",
+        "name": "Sleep.csv",
+        "description": "Sleep stages with heart rate and respiration data",
+        "encodingFormat": "text/csv",
+        "contentUrl": "https://raw.githubusercontent.com/ionaei/fair-hackathon/main/data/Sleep.csv"
+      }
+    ],
+    "variableMeasured": [
+      { "@type": "PropertyValue", "name": "activity",         "description": "In-home movement and activity time-series" },
+      { "@type": "PropertyValue", "name": "sleep",            "description": "Sleep monitoring time-series including sleep stages, heart rate and respiration" },
+      { "@type": "PropertyValue", "name": "physiology",       "description": "Physiological measurements including heart rate, blood pressure and temperature" },
+      { "@type": "PropertyValue", "name": "demographics",     "description": "Participant demographic information including sex and age band" },
+      { "@type": "PropertyValue", "name": "clinical labels",  "description": "Clinically annotated event labels including agitation and weight" }
+    ],
+    "temporalCoverage": "2019-04-01/2019-06-30",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "United Kingdom"
+    },
+    "measurementTechnique": "Remote in-home IoT sensors and wearable devices",
+    "conformsTo": {
+      "@type": "CreativeWork",
+      "url": "https://www.w3.org/TR/vocab-dcat-2/"
+    },
+    "includedInDataCatalog": {
+      "@type": "DataCatalog",
+      "name": "Zenodo",
+      "url": "https://zenodo.org"
+    }
+  }
+  </script>
+</head>
 <body>
 <h1>TIHM: An open dataset for remote healthcare monitoring in dementia</h1>
 
